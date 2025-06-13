@@ -1,0 +1,27 @@
+title: My Blog
+description: A collection of my thoughts and writeups
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /post/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /post/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
